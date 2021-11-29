@@ -1,0 +1,13 @@
+<h1>Estoy en el componente padre</h1>
+
+<br>
+
+<h3>El numero en el componente padre es {{numeroComponentePadre}}</h3>
+
+<br>
+
+<app-componente-hijo-uno [numeroComponenteHijoUno] = "numeroComponentePadre"></app-componente-hijo-uno>
+
+<br>
+
+<app-componente-hijo-dos [numeroComponenteDos] = "numeroComponentePadre" (onClickActualizar)= "actualizarNumero($event)"></app-componente-hijo-dos>
